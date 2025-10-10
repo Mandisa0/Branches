@@ -17,7 +17,7 @@ def initialisebranch(branch_id):
     for response in jsonData['branches'][branchIndex]['responses']:
         print('('+str(response['branch_id'])+'): '+response['response'])
 
-
+initialisebranch(1)
 while 1 == 1:
     selected_option = input('enter option: ')
     initialisebranch(selected_option)
