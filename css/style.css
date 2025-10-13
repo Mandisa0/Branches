@@ -4,8 +4,8 @@ body {
 }
 
 .header {
-    width: 95%;
-    border-radius: 10px;
+    width: 90%;
+    border-radius: 5px;
     padding: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -18,25 +18,23 @@ body {
 }
 
 .stats{
-        width: 95%;
-    border-radius: 10px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 8px;
+    padding-top: 15px;
     background-color: #333;
     color: #fff;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .image{
-    width: 90%;
-    border-radius: 10px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 85%;
+    border-radius: 5px;
+    padding: 0px;
     background-color: #333;
     color: #fff;
     position: relative;
@@ -44,12 +42,25 @@ body {
     margin-right: auto;
     margin-top: 10px;
     height: 30vh;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 90%;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text{
-        width: 95%;
-    border-radius: 10px;
-    padding: 10px;
+        width: 90%;
+    border-radius: 5px;
+    padding: 12px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #333;
@@ -58,12 +69,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    height: 20vh;
+    height: 25vh;
+    font-size: 10px;
 }
 
 .option{
-    width: 95%;
-    border-radius: 10px;
+    width: 85%;
+    border-radius: 5px;
     padding: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -74,4 +86,11 @@ body {
     margin-right: auto;
     margin-top: 10px;
     font-size: 10px;
+    transition: .5s;
+}
+
+.option:hover{
+    background-color: #fff;
+    color: #333;
+    transition: .5s;
 }

@@ -28,7 +28,7 @@
     },
     {
       "branch_id": 4,
-      "text": "You turn and sprint as fast as you can. Behind you, the dragon’s booming laugh echoes through the valley. 'Humans are funny.'",
+      "text": "You turn and sprint as fast as you can. Behind you, the dragon's booming laugh echoes through the valley. 'Humans are funny.'",
       "responses": [
         {"response": "Keep running", "branch_id": 10},
         {"response": "Stop and look back", "branch_id": 11}
@@ -60,7 +60,7 @@
     },
     {
       "branch_id": 8,
-      "text": "Your sword clangs harmlessly against the dragon’s scales. It yawns. 'Are you done?' it asks.",
+      "text": "Your sword clangs harmlessly against the dragon's scales. It yawns. 'Are you done?' it asks.",
       "responses": [
         {"response": "Yes, sorry", "branch_id": 2},
         {"response": "No, attack again!", "branch_id": 17}
@@ -68,7 +68,7 @@
     },
     {
       "branch_id": 9,
-      "text": "You hurl a rock. It bounces off the dragon’s nose. The dragon sighs deeply. You feel your courage melt.",
+      "text": "You hurl a rock. It bounces off the dragon's nose. The dragon sighs deeply. You feel your courage melt.",
       "responses": [
         {"response": "Apologize profusely", "branch_id": 2},
         {"response": "Pretend it was an accident", "branch_id": 18}
@@ -76,7 +76,7 @@
     },
     {
       "branch_id": 10,
-      "text": "You run until your legs give out. When you stop, you realize you’re lost in a dense forest. Something howls in the distance.",
+      "text": "You run until your legs give out. When you stop, you realize you're lost in a dense forest. Something howls in the distance.",
       "responses": [
         {"response": "Climb a tree for safety", "branch_id": 19},
         {"response": "Head back to the dragon", "branch_id": 1}
@@ -84,7 +84,7 @@
     },
     {
       "branch_id": 11,
-      "text": "You turn just in time to see the dragon waving... with a claw the size of a horse. 'Bye!' it shouts. You’re oddly touched.",
+      "text": "You turn just in time to see the dragon waving... with a claw the size of a horse. 'Bye!' it shouts. You're oddly touched.",
       "responses": [
         {"response": "Wave back", "branch_id": 16},
         {"response": "Keep running anyway", "branch_id": 10}
@@ -107,7 +107,7 @@
     },
     {
       "branch_id": 14,
-      "text": "You insult the dragon’s mother. It stares at you in silence... then bursts into laughter. 'You’re bold. I like that.'",
+      "text": "You insult the dragon's mother. It stares at you in silence... then bursts into laughter. 'You're bold. I like that.'",
       "responses": [
         {"response": "Laugh along", "branch_id": 5},
         {"response": "Run before it changes its mind", "branch_id": 4}
@@ -123,7 +123,7 @@
     },
     {
       "branch_id": 16,
-      "text": "You bow and leave. The dragon watches you go, humming softly. Somehow, you feel like you’ll meet again.",
+      "text": "You bow and leave. The dragon watches you go, humming softly. Somehow, you feel like you'll meet again.",
       "responses": []
     },
     {
@@ -133,14 +133,14 @@
     },
     {
       "branch_id": 18,
-      "text": "‘Oh, an accident?’ the dragon repeats. 'Of course it was.' It smiles ominously. The air gets very hot.",
+      "text": "‘Oh, an accident?' the dragon repeats. 'Of course it was.' It smiles ominously. The air gets very hot.",
       "responses": [
         {"response": "Beg for mercy", "branch_id": 2}
       ]
     },
     {
       "branch_id": 19,
-      "text": "You climb the nearest tree. From above, you can see smoke rising from where the dragon rests. You’re safe… for now.",
+      "text": "You climb the nearest tree. From above, you can see smoke rising from where the dragon rests. You're safe… for now.",
       "responses": []
     }
   ]

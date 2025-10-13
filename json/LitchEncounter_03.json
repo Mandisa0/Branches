@@ -1,0 +1,221 @@
+{
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "The glade is serene, but a strange shimmer catches your eye. In the center, a mysterious portal hums with swirling colors, beckoning you. Do you dare step closer?",
+      "responses": [
+        {
+          "response": "Step into the portal",
+          "branch_id": 2,
+          "effects": {
+            "magic": -20,
+            "health": -10
+          }
+        },
+        {
+          "response": "Inspect the portal carefully",
+          "branch_id": 3,
+          "effects": {
+            "strength": -5
+          }
+        },
+        {
+          "response": "Ignore it and follow the forest path",
+          "branch_id": 4
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "You step through the portal and feel reality twist around you. You land in a floating cavern filled with glowing crystals. Something whispers from the shadows…",
+      "responses": [
+        {
+          "response": "Call out to the whisper",
+          "branch_id": 5,
+          "effects": {
+            "magic": -10
+          }
+        },
+        {
+          "response": "Draw your weapon and advance cautiously",
+          "branch_id": 6,
+          "effects": {
+            "health": -5
+          }
+        },
+        {
+          "response": "Try to grab a crystal for yourself",
+          "branch_id": 7,
+          "effects": {
+            "gold": 50,
+            "health": -5
+          }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "As you examine the portal, you notice runes etched around the edges. They warn of both great power and great danger. You feel a tingling in your magical senses.",
+      "responses": [
+        {
+          "response": "Attempt to decipher the runes",
+          "branch_id": 8,
+          "effects": {
+            "magic": -15
+          }
+        },
+        {
+          "response": "Step back and ignore it",
+          "branch_id": 4
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "You continue along the forest path. Birds chirp, and the morning sun warms your skin. For now, peace reigns, but adventure still calls.",
+      "responses": [
+        {
+          "response": "Follow a distant mountain trail",
+          "branch_id": 9
+        },
+        {
+          "response": "Look for nearby villages",
+          "branch_id": 10
+        }
+      ]
+    },
+    {
+      "branch_id": 5,
+      "text": "A spectral figure emerges, smiling. 'Brave or foolish,' it whispers, 'choose wisely.' You sense that this spirit could aid or hinder you.",
+      "responses": [
+        {
+          "response": "Ask for guidance",
+          "branch_id": 11,
+          "effects": {
+            "magic": +10
+          }
+        },
+        {
+          "response": "Attack the spirit",
+          "branch_id": 12,
+          "effects": {
+            "health": -15
+          }
+        }
+      ]
+    },
+    {
+      "branch_id": 6,
+      "text": "You advance cautiously. The shadows part, revealing a glowing sword embedded in a crystal pedestal. It radiates immense power.",
+      "responses": [
+        {
+          "response": "Take the sword",
+          "branch_id": 13,
+          "effects": {
+            "strength": +20,
+            "health": -5
+          }
+        },
+        {
+          "response": "Leave it and explore further",
+          "branch_id": 14
+        }
+      ]
+    },
+    {
+      "branch_id": 7,
+      "text": "As you grab the crystal, it shatters in your hands! Some gold spills out, but a sharp shard cuts you slightly.",
+      "responses": [
+        {
+          "response": "Keep exploring",
+          "branch_id": 6
+        },
+        {
+          "response": "Return to the portal cautiously",
+          "branch_id": 2
+        }
+      ]
+    },
+    {
+      "branch_id": 8,
+      "text": "Deciphering the runes reveals that the portal can transport you to realms of both unimaginable wealth and deadly danger. Knowledge is power, but caution is wise.",
+      "responses": [
+        {
+          "response": "Step through the portal with care",
+          "branch_id": 2
+        },
+        {
+          "response": "Leave the portal behind",
+          "branch_id": 4
+        }
+      ]
+    },
+    {
+      "branch_id": 9,
+      "text": "You climb the mountain trail, wind whipping around you. From the peak, you spot a distant fortress shimmering in the sun. Adventure awaits.",
+      "responses": []
+    },
+    {
+      "branch_id": 10,
+      "text": "You arrive at a village. Villagers eye you warily, sensing your recent encounters. Perhaps some quests or mischief await here.",
+      "responses": []
+    },
+    {
+      "branch_id": 11,
+      "text": "The spirit whispers arcane knowledge into your mind. You feel your magical energy expand and understand new spells.",
+      "responses": [
+        {
+          "response": "Thank the spirit and continue",
+          "branch_id": 6
+        }
+      ]
+    },
+    {
+      "branch_id": 12,
+      "text": "Your attack passes through the spirit, which laughs eerily. In retaliation, it lashes out, sapping your energy.",
+      "responses": [
+        {
+          "response": "Defend yourself",
+          "branch_id": 6,
+          "effects": {
+            "health": -10
+          }
+        }
+      ]
+    },
+    {
+      "branch_id": 13,
+      "text": "You claim the sword! Strength courses through you. You feel ready to face even the mightiest foes, though the crystal pedestal shatters behind you.",
+      "responses": [
+        {
+          "response": "Venture deeper into the cavern",
+          "branch_id": 14
+        }
+      ]
+    },
+    {
+      "branch_id": 14,
+      "text": "Exploring further, you notice the cavern splits into two tunnels: one glowing faintly with magical energy, the other dark and foreboding.",
+      "responses": [
+        {
+          "response": "Take the magical tunnel",
+          "branch_id": 15
+        },
+        {
+          "response": "Take the dark tunnel",
+          "branch_id": 16
+        }
+      ]
+    },
+    {
+      "branch_id": 15,
+      "text": "The magical tunnel hums with power. Crystals float around, and an ethereal chest appears. Who knows what treasures — or curses — lie inside?",
+      "responses": []
+    },
+    {
+      "branch_id": 16,
+      "text": "The dark tunnel is silent, eerie, and cold. You feel a presence watching you. A low growl echoes ahead — perhaps danger lurks.",
+      "responses": []
+    }
+  ]
+}
