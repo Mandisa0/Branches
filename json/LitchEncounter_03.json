@@ -92,7 +92,7 @@
           "response": "Ask for guidance",
           "branch_id": 11,
           "effects": {
-            "magic": +10
+            "magic": 10
           }
         },
         {
@@ -112,7 +112,7 @@
           "response": "Take the sword",
           "branch_id": 13,
           "effects": {
-            "strength": +20,
+            "strength": 20,
             "health": -5
           }
         },

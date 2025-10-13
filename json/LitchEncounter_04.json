@@ -39,7 +39,7 @@
           "branch_id": 5,
           "effects": {
             "gold": 100,
-            "magic": +10
+            "magic": 10
           }
         },
         {
@@ -70,7 +70,7 @@
           "response": "Touch an orb",
           "branch_id": 7,
           "effects": {
-            "magic": +20,
+            "magic": 20,
             "health": -5
           }
         },
@@ -88,8 +88,8 @@
           "response": "Drink the potion now",
           "branch_id": 8,
           "effects": {
-            "health": +20,
-            "magic": +10
+            "health": 20,
+            "magic": 10
           }
         },
         {

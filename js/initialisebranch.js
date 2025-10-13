@@ -20,31 +20,19 @@ function initialiseBranch(object, branchId) {
         let toastext = '';
 
         if (parseInt($(object).attr('data-health')) != 0) {
-            if(parseInt($(object).attr('data-health'))  > 0){
-                toastext += '+'+$(object).attr('data-health')
-            }
-            toastext += $(object).attr('data-health') + ' health<br>'
+            toastext += '<small style="color: tomato;"><i class="fa fa-heart"></i> '+$(object).attr('data-health') + ' health</small><br>'
         }
 
         if (parseInt($(object).attr('data-magic')) != 0) {
-            if(parseInt($(object).attr('data-magic'))  > 0){
-                toastext += '+'+$(object).attr('data-magic')
-            }
-            toastext += $(object).attr('data-magic') + ' magic<br>'
+            toastext += '<small style="color: lightblue;"><i class="fa fa-bolt"></i> '+$(object).attr('data-magic') + ' magic</small><br>'
         }
 
         if (parseInt($(object).attr('data-strength')) != 0) {
-            if(parseInt($(object).attr('data-strength'))  > 0){
-                toastext += '+'+$(object).attr('data-strength')
-            }
-            toastext += $(object).attr('data-strength') + ' strength<br>'
+            toastext += '<small style="color: burlywood;"><i class="fa-hand-fist"></i> '+$(object).attr('data-strength') + ' strength</small><br>'
         }
 
         if (parseInt($(object).attr('data-gold')) != 0) {
-            if(parseInt($(object).attr('data-gold'))  > 0){
-                toastext += '+'+$(object).attr('data-gold')
-            }
-            toastext += $(object).attr('data-gold') + ' gold<br>'
+            toastext += '<small style="color: gold;"><i class="fa fa-coins"></i> '+$(object).attr('data-gold') + ' gold</small><br>'
         }
 
         if(toastext != ''){
@@ -62,7 +50,7 @@ function initialiseBranch(object, branchId) {
             url: "http://127.0.0.1:8000/initialise/branch/",
             data: {
                 branchId: branchId,
-                branchFile: '../json/LitchEncounter_02.json'
+                branchFile: '../json/LitchEncounter_03.json'
             },
 
             success: function (response) {
