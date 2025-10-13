@@ -1,6 +1,6 @@
 import json
 
-with open('branches.json', 'r') as data:
+with open('json/branches.json', 'r') as data:
     jsonData = json.load(data)
 
 def initialisebranch(branch_id):
