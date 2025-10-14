@@ -1,0 +1,55 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_04.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "Night falls again, and the city streets are cloaked in thick mist. The obsidian amulet in your pocket pulses faintly, like a heartbeat echoing through your bones. You pause at the edge of the alley, feeling the distant vibrations beneath the cobblestones. The city is quiet, too quiet. Somewhere below, the earth seems to breathe, and you realize the necromancer's warning may not have been a lie.",
+      "responses": [
+        {
+          "response": "Follow the pulse of the amulet into the sewers",
+          "branch_id": 2,
+          "effects": { "energy": -10, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "You find the sewer entrance hidden behind a pile of discarded crates. The stench hits you like a physical force, but the amulet glows brighter, almost guiding your steps. Each stone you step on feels alive, humming faintly under your boots. You descend the ladder into darkness, your torch flickering against walls slick with moisture. Somewhere in the distance, a grinding sound echoes — like bone scraping on stone. You grip your sword, your heart hammering.",
+      "responses": [
+        {
+          "response": "Move cautiously toward the sound",
+          "branch_id": 3,
+          "effects": { "energy": -15, "health": -5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "The tunnels twist and turn, narrowing and widening unpredictably. Strange markings line the walls — runes that pulse faintly in response to the amulet. You recognize some of them from old tomes: protective sigils, designed to bind something too powerful to touch. A chill crawls down your spine. The air grows heavier, and the pulse in the amulet quickens, almost frantic. You realize that whatever the necromancer tried to seal is waking.",
+      "responses": [
+        {
+          "response": "Press onward despite the danger",
+          "branch_id": 4,
+          "effects": { "energy": -10, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "The corridor opens into a vast underground chamber. Shadows writhe across its walls, cast by your flickering torch. In the center, a fissure splits the ground, and from it rises something immense, ancient, and not quite alive. The amulet vibrates violently, as if trying to warn you. Your instincts scream to run, but duty — or perhaps curiosity — drives you forward. The grinding noise crescendos into a deep, resonant growl that shakes the stones beneath your feet.",
+      "responses": [
+        {
+          "response": "Confront the creature head-on",
+          "branch_id": 5,
+          "effects": { "energy": -20, "health": -15, "strength": 10 }
+        }
+      ]
+    },
+    {
+      "branch_id": 5,
+      "text": "You take a deep breath and step into the chamber. The creature's eyes glint like molten silver, and its form shifts as if made of shadow and bone. The amulet pulses violently, channeling a strange warmth into your hands. With a roar that shakes the tunnels, you face the ancient horror. Time seems to pause. You strike with all your strength, the impact echoing like thunder. The darkness recoils, and slowly, the chamber quiets. Exhausted and battered, you realize the city sleeps a little safer tonight, though the memory of what lurks beneath will haunt you forever.",
+      "responses": []
+    }
+  ]
+}

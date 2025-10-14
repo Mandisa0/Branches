@@ -1,0 +1,44 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_09.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "Weeks have passed since your battle beneath the city, yet unease lingers. The streets bustle with merchants and children, but subtle signs tell a different story: guards whisper of missing shipments, travelers vanish without a trace, and the city’s sewers carry sounds that no one dares investigate. You walk through the marketplace, noting strange symbols etched on walls and corners, almost invisible unless one looks closely. The amulet, now inert, sits heavy against your chest. You realize that while the immediate threat has been defeated, something deeper and more insidious stirs in the shadows.",
+      "responses": [
+        {
+          "response": "Investigate the signs of disturbance in the old quarter",
+          "branch_id": 2,
+          "effects": { "energy": -10, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "The old quarter is narrow and labyrinthine, with buildings leaning precariously and alleyways that vanish into darkness. You notice that the markings on the walls match those from the sewers and the cathedral — a network of signs, hidden in plain sight. Following them carefully, you discover a hidden passage behind a boarded-up tavern. The air inside is stale and heavy, and you hear faint whispers that seem to emanate from the walls themselves. Your grip tightens on your sword, and the amulet, though still cold, begins to pulse ever so slightly, as if sensing your intent. Whatever lies here is patient, watching, and possibly waiting for the wrong person to stumble upon it.",
+      "responses": [
+        {
+          "response": "Enter the hidden passage cautiously",
+          "branch_id": 3,
+          "effects": { "energy": -15, "health": -5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "The passage leads deep below the city, into tunnels older than the oldest maps. Shadows stretch unnaturally along the walls, and the faint hum of unseen machinery — or magic — vibrates through the stone. You come upon a massive chamber, dimly lit by phosphorescent fungi, and in the center, a complex array of runes and artifacts forms a pattern that hums with energy. You recognize pieces of rituals you fought before, but now they are organized with precision, almost like a network. Someone, or something, is orchestrating these events carefully, far beyond what any single necromancer could manage. Your heart pounds as the amulet begins to glow faintly, its pulse syncing with the vibrations of the chamber. This is bigger than you imagined.",
+      "responses": [
+        {
+          "response": "Examine the runes and artifacts to understand the network",
+          "branch_id": 4,
+          "effects": { "energy": -20, "health": -10, "strength": 5, "gold": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "Studying the runes carefully, you realize they are part of a massive ritual network, linking multiple points beneath the city — some active, others dormant. The artifacts resonate with the amulet, indicating a flow of energy across the network. Whoever set this up intends to awaken something far greater than the shadows you faced before. You feel the weight of responsibility pressing on you: the city is oblivious, and every misstep could unleash forces beyond control. You mark the positions of the nodes and plan a route to investigate them systematically. Though the work ahead is daunting, you are resolved: you will protect the city from the unseen threat, one step at a time. Exhausted but determined, you take a deep breath and prepare to descend further into the web of secrets beneath the streets.",
+      "responses": []
+    }
+  ]
+}

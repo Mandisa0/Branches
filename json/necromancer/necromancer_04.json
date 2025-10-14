@@ -1,0 +1,33 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_05.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "Dawn creeps into the streets above as you climb from the sewers, covered in grime and bruises. The amulet in your pocket has gone cold, as if satisfied that its task is complete. Your muscles ache, and your energy is low, but a sense of grim accomplishment fills you. The city wakes, oblivious to the ancient threat you just subdued. A few gold coins clink in your satchel — dropped by the necromancer, perhaps as a warning or a bribe. You count them: enough to buy a warm meal and maybe a night's rest.",
+      "responses": [
+        {
+          "response": "Return to the city guard headquarters to report what happened",
+          "branch_id": 2,
+          "effects": { "energy": -10, "health": -5, "strength": 5, "gold": 10 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "At the guard headquarters, the captain listens silently as you recount the horrors beneath the city. His eyes narrow, betraying disbelief and concern. 'If what you say is true,' he mutters, 'we may need to call in the council. The city cannot know, not yet.' You hand him the amulet, its obsidian surface cool and inert now. He nods gravely, tucking it into a secure chest. You finally sit, letting exhaustion overtake you. Every ache in your body reminds you that the city’s safety comes at a cost, and that some nights will never allow peace.",
+      "responses": [
+        {
+          "response": "Take a well-earned rest and reflect on what you faced",
+          "branch_id": 3,
+          "effects": { "energy": -5, "health": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "You sleep in a small, quiet room provided by the city guard. Dreams are fractured and restless — visions of shadows and eyes that glow like molten silver haunt your mind. Yet in the morning, the weight of the night begins to lift. You rise, bruised but alive, knowing that beneath the streets, ancient forces still stir, waiting for the next careless soul. You clutch your sword belt, ready for whatever comes next. Duty never truly sleeps, but neither does courage, and today, you have earned both.",
+      "responses": []
+    }
+  ]
+}

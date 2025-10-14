@@ -1,0 +1,22 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": null,
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "Days turn to weeks, and the city slowly returns to its usual rhythm. Markets bustle, children play in the streets, and guards patrol with renewed confidence. Yet, for you, nothing feels entirely normal. The memory of the ancient force, the cult, and the hidden network beneath the city lingers. The amulet rests quietly in your pack, inert now, a reminder of the dangers that wait unseen. At headquarters, the captain praises your courage and foresight, ensuring that records of the events are carefully kept away from public eyes. You are offered a position of honor among the city guard, a recognition of your service and vigilance.",
+      "responses": [
+        {
+          "response": "Accept the honor but remain vigilant for future threats",
+          "branch_id": 2,
+          "effects": { "energy": -5, "health": 5, "strength": 5, "gold": 20 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "Even as the city sleeps peacefully, you patrol occasionally, noting small anomalies: a shadow moving oddly, a symbol carved into a wall, whispers in the night. Each reminds you that peace is fragile and vigilance eternal. The experience has changed you — stronger, wiser, and more aware of the delicate balance that keeps the city safe. The amulet, though silent, has become a symbol of your role in defending the city from what lurks beneath. And though the immediate threats are gone, somewhere, in the hidden corners of the world, forces are still stirring. Your duty continues, but for now, the city rests, and you allow yourself a moment of quiet pride and reflection. Courage has endured, duty has been fulfilled, and the future, though uncertain, is yours to guard.",
+      "responses": []
+    }
+  ]
+}

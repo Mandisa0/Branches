@@ -1,0 +1,33 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_06.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "The morning streets are bathed in pale sunlight, yet the city feels different. Merchants shout their wares, children run along cobblestones, and guards patrol with familiar routines, but shadows linger in alleyways, longer than they should be. Rumors whisper through the marketplace: missing pets, strange sounds in the sewers, and a necromancer's warning that no one takes seriously. You tighten your cloak and adjust the amulet, now inert but still heavy in your pocket. Every instinct tells you the city’s peace is fragile.",
+      "responses": [
+        {
+          "response": "Investigate the rumors and see if any danger remains",
+          "branch_id": 2,
+          "effects": { "energy": -10, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "You move through the city carefully, questioning guards and townsfolk. Some speak of strange tremors beneath the streets, others of fleeting shapes in the mist. A small child points to a blocked alley, whispering that something moved there last night. You approach, sword ready, and find traces of ash and scorched stone, a sign that the ancient horror beneath the city may not have been fully contained. A chill runs through your spine, but you know your role: watch, prepare, and protect.",
+      "responses": [
+        {
+          "response": "Mark the alley and return to headquarters to plan",
+          "branch_id": 3,
+          "effects": { "energy": -5, "health": -5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "Back at headquarters, you report the lingering signs of disturbance. The captain frowns, realizing the city might face another threat. Maps are spread, patrols are adjusted, and the amulet is placed under careful observation. You finally sit, feeling the weight of the past nights in your bones. The city sleeps — or at least appears to — but you know better. Beneath the streets, unseen forces stir, and your vigilance is far from over. Yet for now, you allow yourself a moment of calm. Duty never sleeps, but courage has earned its pause.",
+      "responses": []
+    }
+  ]
+}

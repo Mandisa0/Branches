@@ -1,0 +1,59 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_03.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "The city jail smells like damp stone and bad decisions. You shove the necromancer into a cell while the night clerk snores behind the desk. The prisoner glares through the bars, clutching their tattered robes. \"You don\"t understand,\" they say. \"I wasn\"t summoning - I was sealing something away.\"",
+      "responses": [
+        {
+          "response": "Tell them to save it for the magistrate",
+          "branch_id": 2,
+          "effects": { "energy": -5, "strength": 5 }
+        },
+        {
+          "response": "Ask what they mean by \"sealing\"",
+          "branch_id": 3,
+          "effects": { "energy": -10 }
+        },
+        {
+          "response": "Search their belongings for clues",
+          "branch_id": 4,
+          "effects": { "energy": -5, "gold": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "You sigh. \"Save the story for the morning court,\" you mutter, slamming the cell door shut. The necromancer mutters something under their breath - a word that makes the candles flicker. You decide not to ask questions. Another night on the job.",
+      "responses": []
+    },
+    {
+      "branch_id": 3,
+      "text": "\"Sealing what, exactly?\" you ask. The necromancer leans forward, voice low. \"The bones you saw? They weren\"t mine. Something older is stirring beneath the city. I was trying to bind it.\" You stare at them for a long moment. Either they\"re lying - or you\"ve just made a serious mistake.",
+      "responses": [
+        {
+          "response": "Report this to your captain immediately",
+          "branch_id": 5,
+          "effects": { "energy": -10, "strength": 5, "health": -5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "You rummage through their satchel. Inside: a few gold coins, some chalk, and a strange obsidian amulet that hums faintly in your palm. The necromancer shouts, \"Don\"t touch that!\" The amulet warms slightly - unsettlingly.",
+      "responses": [
+        {
+          "response": "Pocket the amulet for inspection later",
+          "branch_id": 5,
+          "effects": { "gold": 10, "health": -5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 5,
+      "text": "As dawn creeps through the barred windows, you finish your report. Whether the necromancer was lying or not, the city will soon find out. Beneath the streets, something shifts - faint, distant, but real. You tighten your grip on your sword belt. Duty never sleeps.",
+      "responses": []
+    }
+  ]
+}

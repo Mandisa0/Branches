@@ -1,0 +1,65 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_10.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "With the network of runes and artifacts mapped, you realize that the city hides more nodes than you first imagined. Each path promises discovery, danger, and the chance to stop a calamity. The amulet pulses faintly in your pocket, as if urging you forward. You have several options: follow the tunnels toward the northern district, explore the submerged passages beneath the docks, or investigate the forgotten catacombs under the old graveyard. Every route has risks, but each could provide clues about the forces orchestrating the hidden network.",
+      "responses": [
+        {
+          "response": "Investigate the northern district tunnels",
+          "branch_id": 2,
+          "effects": { "energy": -15, "health": -5, "strength": 5 }
+        },
+        {
+          "response": "Explore the submerged dock passages",
+          "branch_id": 3,
+          "effects": { "energy": -20, "health": -10, "strength": 5 }
+        },
+        {
+          "response": "Descend into the catacombs under the graveyard",
+          "branch_id": 4,
+          "effects": { "energy": -15, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "The northern district tunnels are narrow and winding. Shadows cling to the walls, and faint whispers echo from unseen corners. You find runes glowing faintly along the passage, marking another node in the network. As you study them, you feel the pulse of the amulet intensify, guiding you further. There are signs that someone—or something—has been here recently. Footprints, scattered ash, and the faint scent of smoke hint at recent activity. You press on, documenting the runes and noting each detail carefully. The deeper you go, the more you realize the network is active and interconnected, leading inevitably toward a central point beneath the city.",
+      "responses": [
+        {
+          "response": "Continue toward the central chamber",
+          "branch_id": 5,
+          "effects": { "energy": -10, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "The submerged passages beneath the docks are treacherous. Water rises waist-high in some areas, and the sound of dripping echoes through the stone tunnels. Your torch barely illuminates the carved runes on the walls. The amulet hums, vibrating in your hand, as though resonating with the water-filled node. Evidence of a recent ritual is clear: discarded candles, scorched stone, and faint magical residue. You note the layout carefully, knowing this node, like the others, is part of a larger system. The currents push you forward, guiding your steps deeper toward the heart of the network.",
+      "responses": [
+        {
+          "response": "Swim deeper toward the central chamber",
+          "branch_id": 5,
+          "effects": { "energy": -20, "health": -10, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "The catacombs beneath the graveyard are cold and filled with the scent of earth and decay. Tombstones crumble along the walls, and the silence is broken only by the distant drip of water. Faint runes glow along the floor, marking yet another node in the network. You trace the symbols carefully, noticing connections to other nodes you’ve already documented. There are signs of previous intrusions, though none recent. The amulet begins to pulse in sync with the runes, guiding your path. It becomes clear that all these nodes are linked, converging on a single chamber deep beneath the city — the source of the power behind the network.",
+      "responses": [
+        {
+          "response": "Proceed toward the central chamber",
+          "branch_id": 5,
+          "effects": { "energy": -10, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 5,
+      "text": "At last, you reach the central chamber beneath the city. The air vibrates with energy, and the amulet pulses violently in your hand. In the center stands a massive figure, draped in black robes, orchestrating the ritual that links all the nodes. Shadows writhe around it, but this time, you are prepared. You advance, sword ready, the amulet radiating warmth and strength into your body. Every strike, every maneuver is a test of endurance and will. Slowly, methodically, you disrupt the network, breaking the flow of energy between the nodes. The figure screams, a sound that bends reality, then collapses as the shadows dissipate. The city above sleeps peacefully, unaware of the catastrophe averted beneath its streets. Exhausted, bloodied, but victorious, you clutch the amulet, knowing that your vigilance has saved countless lives. Duty never sleeps, but courage and perseverance have won the day.",
+      "responses": []
+    }
+  ]
+}

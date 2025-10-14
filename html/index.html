@@ -18,7 +18,7 @@
   toast: true,
   position: "middle",
   showConfirmButton: false,
-  timer: 1500,
+  timer: 1000,
   timerProgressBar: false,
   didOpen: (toast) => {
     toast.onmouseenter = Swal.stopTimer;
@@ -33,8 +33,32 @@
 
 <body>
     <div class="header">
-        &nbsp;
+        <div class="container">
+            <div class="row">
+                <div class="col" style="text-align: left;">
+                    <small style="color: whitesmoke;"><i class="fa fa-leaf"></i>&nbsp;Branches</small>
+                </div>
+
+                <div class="col" style="text-align: right;">
+                    <small data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: whitesmoke;">&nbsp;<i class="fa fa-bars"></i></small>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div style="text-align: center; width: 40%;" class="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <small style="color: whitesmoke;"><i class="fa fa-shop"></i><br><b id="store">Store</b></small>
+                </div>
+                <div class="col">
+                    <small style="color: whitesmoke;"><i class="fa fa-briefcase"></i><br><b id="items">Items</b></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div style="text-align: center;" class="stats">
         <div class="container">
             <div class="row">
@@ -42,7 +66,7 @@
                     <small style="color: tomato;"><i class="fa fa-heart"></i> <b id="health">50</b></small>
                 </div>
                 <div class="col">
-                    <small style="color: lightblue;"><i class="fa fa-bolt"></i> <b id="magic">50</b></small>
+                    <small style="color: lightblue;"><i class="fa fa-bolt"></i> <b id="energy">50</b></small>
                 </div>
                  <div class="col">
                     <small style="color: burlywood;"><i class="fa fa-hand-fist"></i> <b id="strength">50</b></small>
@@ -53,9 +77,9 @@
             </div>
         </div>
     </div>
+    
     <div class="image">
-        <img
-            src="https://imageio.forbes.com/specials-images/imageserve/6620b6af1dba8edc23ec7c78/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds">
+        <img class="branchImage"/>
     </div>
     <div class="text">
         &nbsp;
@@ -74,6 +98,21 @@
             [3] Option 3
         </div>
     </div>
+
+    <div id="exampleModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Options</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
     <br>
     <audio id="branchOption" src="../audio/branchOption.wav"></audio>
 </body>

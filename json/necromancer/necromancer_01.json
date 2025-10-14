@@ -1,0 +1,65 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_02.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "The streets are quiet tonight, save for the echo of your boots. A faint green glow leaks from an alley - and with it, the whisper of forbidden words. Someone\"s practicing necromancy. As a city guard, that\"s your problem now.",
+      "responses": [
+        {
+          "response": "Approach quietly, hand on sword hilt",
+          "branch_id": 2,
+          "effects": { "energy": -5 }
+        },
+        {
+          "response": "Shout and demand they stop at once",
+          "branch_id": 3,
+          "effects": { "strength": 5, "energy": -10 }
+        },
+        {
+          "response": "Throw a rock to distract them",
+          "branch_id": 4,
+          "effects": { "energy": -3 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "You move closer, steps light as shadow. The necromancer mutters over a circle of bones, green sparks flickering between skeletal fingers. A half-built skeleton twitches - then its skull turns toward you.",
+      "responses": [
+        {
+          "response": "Draw your sword and rush in",
+          "branch_id": 5,
+          "effects": { "strength": 5, "health": -10 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "\"City Guard! Step away from the bones!\" you shout. The necromancer jumps, botching the spell. A burst of green light fills the alley, leaving the air thick with ozone and regret. When the smoke clears, they\"re still standing - barely.",
+      "responses": [
+        {
+          "response": "Cuff them and drag them to the dungeon",
+          "branch_id": 5,
+          "effects": { "strength": 5, "health": -5, "energy": -5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "You hurl a rock across the alley. It clatters loudly, startling the necromancer into dropping a pouch of gold and several bones. The bones scatter harmlessly - looks like the ritual wasn\"t finished yet.",
+      "responses": [
+        {
+          "response": "Take the chance to arrest them",
+          "branch_id": 5,
+          "effects": { "strength": 5, "energy": -5, "gold": 10 }
+        }
+      ]
+    },
+    {
+      "branch_id": 5,
+      "text": "You grab the necromancer by the wrist before they can finish their next chant. \"I was just practicing!\" they protest. You roll your eyes - everyone says that. You drag them toward the city jail as the last of the green light fades from the stones. Another long night, but no undead roaming the streets - call that a win.",
+      "responses": []
+    }
+  ]
+}

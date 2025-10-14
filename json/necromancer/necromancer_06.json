@@ -1,0 +1,44 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_07.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "Days pass, but the city does not return to normal. At dusk, you patrol the alleys again, drawn by rumors of flickering lights and whispered chants. The amulet, inert in your pocket, seems to hum faintly, guiding you toward the old district near the abandoned cathedral. The streets are empty, and the air smells of smoke and damp stone. As you approach the cathedral, you notice symbols etched into the walls — the same sigils you saw in the sewers, but more intricate, more deliberate. Something is stirring, and it is not idle.",
+      "responses": [
+        {
+          "response": "Investigate the cathedral discreetly",
+          "branch_id": 2,
+          "effects": { "energy": -15, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "Inside, shadows move like living things. Candles burn along the cracked walls, though no one seems present. You follow a narrow passage that spirals downward, the amulet glowing faintly in response to the darkness. Whispers echo in the chamber below, unintelligible but urgent. Peering into the hall, you see robed figures gathered around a pit — chanting in a language older than the city itself. Bones, not human, float above the pit, held aloft by invisible forces. The sight makes your stomach twist, but you know that confronting this cult may be the only way to prevent another catastrophe.",
+      "responses": [
+        {
+          "response": "Step forward and reveal yourself",
+          "branch_id": 3,
+          "effects": { "energy": -20, "health": -10, "strength": 10 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "The cultists turn as one, their chants breaking into screams of rage and surprise. The air vibrates with unnatural energy, and shadows leap from the walls. The amulet pulses violently, as if sensing the ancient force beneath the city reacting to their ritual. You swing your sword, cutting through the first figure, and the chamber erupts into chaos. The pit shudders, glowing with a sickly green light. A figure cloaked in black rises above it, its eyes burning with a fury that chills your bones. The battle is brutal; every strike tests your stamina, every move drains energy and strength. Yet through grit and resolve, you push the cult back, shattering their ritual and dispersing the shadows. The pit collapses into nothingness, leaving only echoes of what might have been. Exhausted, bloodied, but victorious, you realize the city sleeps a little safer, though the memory of the cult and their forbidden magic will haunt you forever.",
+      "responses": [
+        {
+          "response": "Return to headquarters to document the events and rest",
+          "branch_id": 4,
+          "effects": { "energy": -15, "health": -10, "strength": 5, "gold": 10 }
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "At the guard headquarters, the captain listens in stunned silence as you recount the horrors. Maps are marked, patrols increased, and the amulet is locked away under heavy guard. You finally rest, allowing your body to recover, though your mind races with visions of shadows and ancient power. Outside, the city moves on, oblivious to the battle beneath its streets. You know your vigilance is far from over. Somewhere, hidden in the corners of the city or deep beneath its foundations, other forces stir. Duty never sleeps, but courage, for now, allows a moment of reprieve.",
+      "responses": []
+    }
+  ]
+}

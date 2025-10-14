@@ -1,0 +1,44 @@
+{
+  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "nextBranchFile": "necromancer/necromancer_08.json",
+  "branches": [
+    {
+      "branch_id": 1,
+      "text": "Weeks pass, but unease hangs over the city like a heavy fog. The amulet remains in your possession, inert most of the time, but at night it begins to pulse faintly, as though sensing something far away. One evening, as you patrol the rooftops, a cold wind sweeps through the alleys below, carrying whispers that raise goosebumps on your skin. The amulet thrums against your chest, its energy building, and you realize that whatever force stirred in the sewers and the cathedral is not contained — it is moving, awakening elsewhere.",
+      "responses": [
+        {
+          "response": "Follow the amulet’s pulse to its source",
+          "branch_id": 2,
+          "effects": { "energy": -15, "health": -5, "strength": 5 }
+        }
+      ]
+    },
+    {
+      "branch_id": 2,
+      "text": "The pulse guides you through forgotten tunnels beneath the old quarter of the city. Dust and rubble make the air thick, and the occasional sound of dripping water echoes like distant footsteps. The amulet’s glow intensifies as you approach a sealed archway adorned with runes similar to those used by the cult. Behind it, you sense a massive, stirring power — something neither alive nor dead, but old, patient, and waiting. The ground trembles beneath your boots, and you grip your sword tighter, feeling both fear and resolve intertwine.",
+      "responses": [
+        {
+          "response": "Break the seal and confront whatever lies beyond",
+          "branch_id": 3,
+          "effects": { "energy": -20, "health": -10, "strength": 10 }
+        }
+      ]
+    },
+    {
+      "branch_id": 3,
+      "text": "With a deep breath, you shatter the rune-sealed archway. A cold, almost tangible darkness spills out, accompanied by a deafening hum that reverberates in your bones. From the shadows rises a figure, enormous and impossibly ancient, its form shifting like smoke and bone. Eyes like molten silver bore into yours. The amulet pulses violently in response, radiating warmth and energy into your hands, almost guiding your movements. You swing your sword, striking the creature as the air itself seems to fight against you. Every step, every strike saps your energy, but the force beneath the city recoils slightly with each hit. You realize that this is a battle not just of strength, but of will — if you falter, the city itself may fall into shadow.",
+      "responses": [
+        {
+          "response": "Channel all your strength into one final strike",
+          "branch_id": 4,
+          "effects": { "energy": -25, "health": -20, "strength": 15 }
+        }
+      ]
+    },
+    {
+      "branch_id": 4,
+      "text": "With a roar that shakes the tunnels, you pour every ounce of your strength and courage into a single, decisive strike. The ancient being shrieks, a sound that seems to bend reality, then recoils and collapses into a shadowy mist. The pulse in the amulet slows, returning to its faint, steady rhythm. You collapse to your knees, bloodied, exhausted, and trembling, but victorious. The tunnels are quiet now, the threat neutralized for the moment. You know the city sleeps unaware, but this night has changed you forever. Duty, courage, and vigilance have saved countless lives, and though your body aches, your resolve burns stronger than ever.",
+      "responses": []
+    }
+  ]
+}

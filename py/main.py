@@ -28,6 +28,8 @@ def initialisebranch(branchFile, branchId):
         else:
             branchIndexCount += 1
 
+    branchImage = jsonData['branchImage']
+    nextBranchFile = jsonData['nextBranchFile']
     branchText = jsonData['branches'][branchIndex]['text']
     
     branchResponses = []
@@ -38,4 +40,4 @@ def initialisebranch(branchFile, branchId):
                 branchEffects.append({key: effects})
         branchResponses.append({'branchId': response['branch_id'], 'branchEffects': branchEffects,'response': response['response']})
 
-    return {'branchText': branchText,  'branchResponses': branchResponses}
+    return {'branchImage': branchImage, 'nextBranchFile': nextBranchFile, 'branchText': branchText,  'branchResponses': branchResponses}
