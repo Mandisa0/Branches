@@ -86,8 +86,25 @@ function initialiseBranch(object, branchId) {
                     }
 
 
+                    let branchOptionRequirements = '';
 
-                    branchOptions += '<div data-branch-id="' + response.branchResponses[i].branchId + '" data-health="' + healthEffect + '" data-magic="' + magicEffect + '" data-strength="' + strengthEffect + '" data-gold="' + goldEffect + '" onclick="initialiseBranch(this, ' + response.branchResponses[i].branchId + ')" class="option">[' + (i + 1) + '] ' + response.branchResponses[i].response + '</div>';
+                    if(healthEffect != 0){
+                        branchOptionRequirements += '<small style="color: tomato;"><i class="fa fa-heart"></i> <b id="health">'+healthEffect+'</b></small> ';
+                    }
+                    
+                    if(magicEffect != 0){
+                        branchOptionRequirements += '<small style="color: lightblue;"><i class="fa fa-bolt"></i> <b id="magic">'+magicEffect+'</b></small> ';
+                    }
+
+                    if(strengthEffect != 0){
+                        branchOptionRequirements += '<small style="color: burlywood;"><i class="fa fa-hand-fist"></i> <b id="strength">'+strengthEffect+'</b></small> ';
+                    }
+
+                    if(goldEffect != 0){
+                        branchOptionRequirements += '<small style="color: gold;"><i class="fa fa-coins"></i> <b id="gold">'+goldEffect+'</b></small> ';
+                    }
+
+                    branchOptions += '<div data-branch-id="' + response.branchResponses[i].branchId + '" data-health="' + healthEffect + '" data-magic="' + magicEffect + '" data-strength="' + strengthEffect + '" data-gold="' + goldEffect + '" onclick="initialiseBranch(this, ' + response.branchResponses[i].branchId + ')" class="option">[' + (i + 1) + '] ' + response.branchResponses[i].response +' '+ branchOptionRequirements + '</div>';
                 }
                 if (response.branchResponses.length == 0) {
                     branchOptions += '<div onclick="initialiseBranch(this, 1)" class="option">[' + (i + 1) + '] Branch Complete</div>';
