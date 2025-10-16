@@ -134,3 +134,21 @@ body {
     transform: scale(0.4);
     border-radius: 500px;
 }
+
+.menu-item{
+    border: 0px solid whitesmoke;
+    background-color: #3b3b3b !important;
+    border-radius: 5px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding: 10px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    width: 70px !important;
+    transition: .2s;
+}
+
+.menu-item:hover{
+    background-color: #2b2b2b !important;
+    transition: .2s;
+}

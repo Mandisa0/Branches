@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../js/initialisebranch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/initialisebranch.js"></script>
+    <script src="../js/loadpage.js"></script>
 
     <script>
         const Toast = Swal.mixin({
@@ -39,8 +41,8 @@
                     <small style="color: whitesmoke;"><i class="fa fa-leaf"></i>&nbsp;Branches</small>
                 </div>
 
-                <div class="col" style="text-align: right;">
-                    <small data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: whitesmoke;">&nbsp;<i class="fa fa-bars"></i></small>
+                <div id="options" data-bs-toggle="modal" data-bs-target="#modal" class="col" style="text-align: right;">
+                    <small data-bs-toggle="modal" data-bs-target="#modal" style="color: whitesmoke;">&nbsp;<i class="fa fa-bars"></i></small>
                 </div>
             </div>
         </div>
@@ -49,10 +51,10 @@
     <div style="text-align: center; width: 40%;" class="stats">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <small style="color: whitesmoke;"><i class="fa fa-shop"></i><br><b id="store">Store</b></small>
+                <div id="store" data-bs-toggle="modal" data-bs-target="#modal" class="col">
+                    <small style="color: whitesmoke;"><i class="fa fa-shop"></i><br><b>Store</b></small>
                 </div>
-                <div class="col">
+                <div id="items" data-bs-toggle="modal" data-bs-target="#modal" class="col">
                     <small style="color: whitesmoke;"><i class="fa fa-briefcase"></i><br><b id="items">Items</b></small>
                 </div>
             </div>
@@ -99,14 +101,14 @@
         </div>
     </div>
 
-    <div id="exampleModal" class="modal" tabindex="-1">
+    <div id="modal" class="modal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Options</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="modal-body">
         <p>Modal body text goes here.</p>
       </div>
     </div>
@@ -115,6 +117,8 @@
 
     <br>
     <audio id="branchOption" src="../audio/branchOption.wav"></audio>
+    <audio id="openModal" src="../audio/openModal.wav"></audio>
+    <audio id="closeModal" src="../audio/closeModal.wav"></audio>
 </body>
 
 </html>
