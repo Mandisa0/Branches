@@ -18,7 +18,7 @@ body {
 }
 
 .stats {
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
     padding: 8px;
     padding-top: 15px;
@@ -32,7 +32,7 @@ body {
 }
 
 .image {
-    width: 85%;
+    width: 70%;
     border-radius: 5px;
     padding: 10px;
     background-color: #333;
@@ -50,7 +50,7 @@ body {
 }
 
 .image img {
-    height: 95%;
+    height: 100%;
     border-radius: 5px;
     color: #fff;
     position: relative;

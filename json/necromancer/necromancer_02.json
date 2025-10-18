@@ -1,5 +1,5 @@
 {
-  "branchImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNt0PnObgqoHyzBaizlTXSWQo023W8XqA3wQ&s",
+  "branchImage": "../images/necromancer/necromancer_02.png",
   "nextBranchFile": "necromancer/necromancer_03.json",
   "branches": [
     {

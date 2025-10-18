@@ -1,5 +1,5 @@
 let currentBranchImage = '';
-let currentBranchFile = 'cursed_crown/cursed_crown_01.json'
+let currentBranchFile = 'necromancer/necromancer_01.json'
 let nextBranchFile = '';
 
 function initialiseBranch(object, branchId) {
