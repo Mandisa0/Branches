@@ -1,5 +1,5 @@
 let currentBranchImage = '';
-let currentBranchFile = 'necromancer/necromancer_01.json'
+let currentBranchFile = 'cursed_crown/cursed_crown_01.json'
 let nextBranchFile = '';
 
 function initialiseBranch(object, branchId) {
@@ -18,41 +18,41 @@ function initialiseBranch(object, branchId) {
         let toastext = '';
 
         if (parseInt($(object).attr('data-health')) != 0) {
-            toastext += '<small style="color: tomato;"><i class="fa fa-heart"></i> '+$(object).attr('data-health') + ' health</small><br>'
+            toastext += '<small style="color: tomato;margin:5px;font-size:10px"><i class="fa fa-heart"></i> '+$(object).attr('data-health') + ' health</small><br>'
         }
 
         if (parseInt($(object).attr('data-energy')) != 0) {
-            toastext += '<small style="color: lightblue;"><i class="fa fa-bolt"></i> '+$(object).attr('data-energy') + ' energy</small><br>'
+            toastext += '<small style="color: lightblue;margin:5px;font-size:10px"><i class="fa fa-bolt"></i> '+$(object).attr('data-energy') + ' energy</small><br>'
         }
 
         if (parseInt($(object).attr('data-strength')) != 0) {
-            toastext += '<small style="color: burlywood;"><i class="fa fa-hand-fist"></i> '+$(object).attr('data-strength') + ' strength</small><br>'
+            toastext += '<small style="color: burlywood;margin:5px;font-size:10px"><i class="fa fa-hand-fist"></i> '+$(object).attr('data-strength') + ' strength</small><br>'
         }
 
         if (parseInt($(object).attr('data-gold')) != 0) {
-            toastext += '<small style="color: gold;"><i class="fa fa-coins"></i> '+$(object).attr('data-gold') + ' gold</small><br>'
+            toastext += '<small style="color: gold;margin:5px;font-size:10px"><i class="fa fa-coins"></i> '+$(object).attr('data-gold') + ' gold</small><br>'
         }
 
 
         let exit = false;
 
-        if(health <= 0 ){
-            toastext = '<small style="color: tomato;"><i class="fa fa-heart"></i> You do not have enough health</small><br>';
+        if(health < 0 ){
+            toastext = '<small style="color: tomato;margin:5px;font-size:10px"><i class="fa fa-heart"></i> You do not have enough health</small><br>';
             exit = true;
         }
 
-        if(energy <= 0 ){
-            toastext = '<small style="color: lightblue;"><i class="fa fa-bolt"></i> You do not have enough energy</small><br>';
+        if(energy < 0 ){
+            toastext = '<small style="color: lightblue;margin:5px;font-size:10px"><i class="fa fa-bolt"></i> You do not have enough energy</small><br>';
             exit = true;
         }
 
-        if(strength <= 0 ){
-            toastext = '<small style="color: burlywood;"><i class="fa fa-hand-fist"></i> You do not have enough strength</small><br>';
+        if(strength < 0 ){
+            toastext = '<small style="color: burlywood;margin:5px;font-size:10px"><i class="fa fa-hand-fist"></i> You do not have enough strength</small><br>';
             exit = true;
         }
 
-        if(gold <= 0 ){
-            toastext = '<small style="color: gold;"><i class="fa fa-coins"></i> You do not have enough gold</small><br>';
+        if(gold < 0 ){
+            toastext = '<small style="color: gold;margin:5px;font-size:10px"><i class="fa fa-coins"></i> You do not have enough gold</small><br>';
             exit = true;
         }
 
