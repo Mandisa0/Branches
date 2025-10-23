@@ -4,8 +4,8 @@ try:
     subprocess.run([
     "python", "-m", "uvicorn", "main:app",
     "--reload",
-    "--host", "132.148.181.9",
-    "--port", "8000"
+    "--host", "0.0.0.0",
+    "--port", "80"
 ], check=True)
 except subprocess.CalledProcessError as e:
     print(f"Error running uvicorn: {e}")
