@@ -5,7 +5,7 @@ try:
     "python", "-m", "uvicorn", "main:app",
     "--reload",
     "--host", "0.0.0.0",
-    "--port", "80"
+    "--port", "8000"
 ], check=True)
 except subprocess.CalledProcessError as e:
     print(f"Error running uvicorn: {e}")
