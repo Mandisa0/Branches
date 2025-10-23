@@ -77,10 +77,10 @@ function initialiseBranch(object, branchId) {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "http://127.0.0.1:8000/initialise/branch/",
+            url: "https://phantomstudio.co.za/branches/initialise/branch",
             data: {
                 branchId: branchId,
-                branchFile: '../json/'+currentBranchFile
+                branchFile: ''+currentBranchFile
             },
 
             success: function (response) {
