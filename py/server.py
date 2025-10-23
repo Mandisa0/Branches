@@ -4,7 +4,7 @@ try:
     subprocess.run([
     "python", "-m", "uvicorn", "main:app",
     "--reload",
-    "--host", "0.0.0.0",
+    "--host", "phantomstudio.co.za",
     "--port", "8000"
 ], check=True)
 except subprocess.CalledProcessError as e:
