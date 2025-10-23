@@ -4,8 +4,6 @@ from fastapi.middleware.cors import CORSMiddleware
 import json
 app = FastAPI()
 
-
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # or ["*"] to allow all
