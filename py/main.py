@@ -2,20 +2,22 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json
-app = FastAPI()
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from markupsafe import escape
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # or ["*"] to allow all
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+app = Flask(__name__)
+application = app
+
+CORS(app)
 
 @app.get("/initialise/branch")
-def initialisebranch(branchFile, branchId):
+def initialisebranch():
 
-    with open('../json/'+branchFile, 'r') as data:
+    branchFile = request.args.get('branchFile')
+    branchId = request.args.get('branchId')
+
+    with open('json/'+branchFile, 'r') as data:
         jsonData = json.load(data)
 
     branchIndex = 0
@@ -38,4 +40,7 @@ def initialisebranch(branchFile, branchId):
                 branchEffects.append({key: effects})
         branchResponses.append({'branchId': response['branch_id'], 'branchEffects': branchEffects,'response': response['response']})
 
-    return {'branchImage': branchImage, 'nextBranchFile': nextBranchFile, 'branchText': branchText,  'branchResponses': branchResponses}
+    return jsonify({'branchImage': branchImage, 'nextBranchFile': nextBranchFile, 'branchText': branchText,  'branchResponses': branchResponses})
+
+if __name__ == '__main__':
+    app.run(debug=True)
