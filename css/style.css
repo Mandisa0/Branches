@@ -165,7 +165,7 @@
     }
 
     .header {
-        width: 50%;
+        width: 30%;
         border-radius: 5px;
         padding: 10px;
         padding-top: 15px;
@@ -179,7 +179,21 @@
     }
 
     .stats {
-        width: 40%;
+        width: 20%;
+        border-radius: 5px;
+        padding: 8px;
+        padding-top: 15px;
+        background-color: #333;
+        color: #fff;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .selection {
+        width: 10%;
         border-radius: 5px;
         padding: 8px;
         padding-top: 15px;
@@ -193,7 +207,7 @@
     }
 
     .image {
-        width: 30%;
+        width: 20%;
         border-radius: 5px;
         padding: 10px;
         background-color: #333;
@@ -220,7 +234,7 @@
     }
 
     .text {
-        width: 50%;
+        width: 25%;
         border-radius: 5px;
         padding: 12px;
         padding-top: 20px;
@@ -236,7 +250,7 @@
     }
 
     .option {
-        width: 45%;
+        width: 25%;
         border-radius: 5px;
         padding: 10px;
         padding-top: 15px;
@@ -265,7 +279,7 @@
     .swal2-toast,
     .swal2-show {
         background-color: #333 !important;
-        width: 95% !important;
+        width: 35% !important;
     }
 
     .modal-content {
@@ -273,7 +287,7 @@
         color: #fff;
         margin-top: 65px;
         border-radius: 5px !important;
-        width: 50%;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
     }
