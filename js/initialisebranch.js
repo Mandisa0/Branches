@@ -80,7 +80,7 @@ function initialiseBranch(object, branchId) {
             url: "https://phantomstudio.co.za/branches/initialise/branch",
             data: {
                 branchId: branchId,
-                branchFile: ''+currentBranchFile
+                branchFile: '../json/'+currentBranchFile
             },
 
             success: function (response) {
