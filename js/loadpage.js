@@ -17,15 +17,13 @@ function loadpage(id, url) {
 
 }
 
-function playOpenModalSound()
-{
+function playOpenModalSound() {
     var audio = document.getElementById('openModal');
     audio.currentTime = 0;
     audio.play();
 }
 
-function playCloseModalSound()
-{
+function playCloseModalSound() {
     var audio = document.getElementById('closeModal');
     audio.currentTime = 0;
     audio.play();
@@ -39,7 +37,7 @@ $(document).ready(function () {
         loadpage('modal-body', '../html/store.html')
     });
 
-     $("#items").click(function () {
+    $("#items").click(function () {
         playOpenModalSound();
         $('.modal-title').html('<i class="fa fa-briefcase" aria-hidden="true"></i> Items');
         loadpage('modal-body', '../html/items.html')
@@ -55,10 +53,31 @@ $(document).ready(function () {
         playCloseModalSound();
     });
 
-    $(".menu-item").on('click',function () {
+    $(".menu-item").on('click', function () {
         alert('click');
         playOpenModalSound();
     });
+
+    if (localStorage.getItem("health") == null) {
+        localStorage.setItem("health", 100);
+    }
+
+    if (localStorage.getItem("energy") == null) {
+        localStorage.setItem("energy", 100);
+    }
+
+    if (localStorage.getItem("strength") == null) {
+        localStorage.setItem("strength", 100);
+    }
+
+    if (localStorage.getItem("gold") == null) {
+        localStorage.setItem("gold", 100);
+    }
+
+    $("#health").text(localStorage.getItem("health"));
+    $("#energy").text(localStorage.getItem("energy"));
+    $("#strength").text(localStorage.getItem("strength"));
+    $("#gold").text(localStorage.getItem("gold"));
 
 });
 

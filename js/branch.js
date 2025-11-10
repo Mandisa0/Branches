@@ -9,11 +9,15 @@ function initialiseBranch(object, branchId) {
     audio.play();
 
     if (branchId != 1) {
-        console.log($(object).attr('data-branch-id'))
-        health = parseInt($("#health").text()) + parseInt($(object).attr('data-health'));
-        energy = parseInt($("#energy").text()) + parseInt($(object).attr('data-energy'));
-        strength = parseInt($("#strength").text()) + parseInt($(object).attr('data-strength'));
-        gold = parseInt($("#gold").text()) + parseInt($(object).attr('data-gold'));
+        health = parseInt(localStorage.getItem("health")) + parseInt($(object).attr('data-health'));
+        energy = parseInt(localStorage.getItem("energy")) + parseInt($(object).attr('data-energy'));
+        strength = parseInt(localStorage.getItem("strength")) + parseInt($(object).attr('data-strength'));
+        gold = parseInt(localStorage.getItem("gold")) + parseInt($(object).attr('data-gold'));
+
+        localStorage.setItem("health", health);
+        localStorage.setItem("energy", energy);
+        localStorage.setItem("strength", strength);
+        localStorage.setItem("gold", gold);
 
         let toastext = '';
 
