@@ -61,3 +61,5 @@ $(document).ready(function () {
     });
 
 });
+
+loadpage('main-content', 'branches.html')
