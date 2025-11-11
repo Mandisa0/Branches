@@ -11,13 +11,21 @@ application = app
 
 CORS(app)
 
+@app.get("/get/branches")
+def getBranches():
+
+    with open('branches/branches.json', 'r') as data:
+        jsonData = json.load(data)
+
+    return jsonify({'branches': jsonData})
+
 @app.get("/initialise/branch")
-def initialisebranch():
+def initialiseBranch():
 
     branchFile = request.args.get('branchFile')
     branchId = request.args.get('branchId')
 
-    with open('json/'+branchFile, 'r') as data:
+    with open('branches/'+branchFile, 'r') as data:
         jsonData = json.load(data)
 
     branchIndex = 0

@@ -1,0 +1,14 @@
+{
+    "branches": [
+        {
+            "title": "The Necromancer",
+            "description": "",
+            "file": "necromancer/necromancer_01.json"
+        },
+        {
+            "title": "The Cursed Crown",
+            "description": "",
+            "file": "cursed_crown/cursed_crown_01.json"
+        }
+    ]
+}
