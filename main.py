@@ -2,7 +2,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from markupsafe import escape
 
@@ -10,6 +10,13 @@ app = Flask(__name__)
 application = app
 
 CORS(app)
+
+@app.route('/get/image')
+def getImage():
+    
+    imageFile = request.args.get('imageFile')
+
+    return send_from_directory('images/', imageFile)
 
 @app.get("/get/branches")
 def getBranches():
