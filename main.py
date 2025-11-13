@@ -17,7 +17,7 @@ def getBranches():
     with open('branches/branches.json', 'r') as data:
         jsonData = json.load(data)
 
-    return jsonify(jsonData)
+    return jsonData
 
 @app.get("/initialise/branch")
 def initialiseBranch():
