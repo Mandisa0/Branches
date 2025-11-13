@@ -1,5 +1,5 @@
 {
-  "branchImage": "../images/necromancer/necromancer_05.png",
+  "branchImage": "necromancer/necromancer_05.png",
   "nextBranchFile": "necromancer/necromancer_06.json",
   "branches": [
     {
